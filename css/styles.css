@@ -1,0 +1,197 @@
+/* Estilos Personalizados */
+
+/* Seção Herói */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./../assets/background.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 30vw;
+}
+
+/* Animação para o título */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação para o parágrafo */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicando as animações */
+.hero h1 {
+    animation: fadeInDown 2s ease-out forwards;
+}
+
+.hero p {
+    animation: fadeInUp 2s ease-out 1s forwards; /* Animação com atraso de 1s */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;  
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000; /* Borda preta */
+}
+
+.hero p {
+  font-size: 1.2rem;  
+  text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+  -1px 1px 0 #000,
+   1px 1px 0 #000; /* Borda preta */
+}
+
+/* Sobre Nós */
+#sobre h2 {
+  margin-bottom: 20px;
+  font-family: 'Lilita One', sans-serif; /* Fonte temática */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Borda preta */
+}
+
+#sobre p {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: 'Lilita One', sans-serif; /* Fonte temática */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Borda preta */
+}
+
+/* Projetos */
+#projetos h2 {
+  margin-bottom: 40px;
+  font-family: 'Lilita One', sans-serif; /* Fonte temática */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Borda preta */
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Lilita One', sans-serif; /* Fonte temática */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Borda preta */
+}
+
+.card-text {
+  font-size: 0.95rem;
+  font-family: 'Lilita One', sans-serif; /* Fonte temática */
+  text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Borda preta */
+}
+
+/* Depoimentos */
+blockquote {
+  font-style: italic;
+  background: #f20a45;
+  padding: 20px;
+  border-left: 5px solid #f20a45;
+}
+
+/* Rodapé */
+footer h5 {
+  margin-bottom: 15px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: 'Lilita One', sans-serif;
+}
+
+/* Botão Flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    text-decoration: none;
+    color: white;
+}
+
+/* Seta para Baixo */
+.down-arrow {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    text-decoration: none;
+}
+
+.down-arrow:hover {
+    color: #d1d1d1;
+}
+
+/* Animação de Bounce */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
