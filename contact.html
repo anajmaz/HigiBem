@@ -12,15 +12,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
           <a class="navbar-brand" href="index.html">
-              <img src="assets/logo.png" alt="HigiBem" class="img-fluid" style="
-                position: fixed;
-                top: 40px;
-                left: 40px;
-                width: 200px;
-                height: auto;
-                border-radius: 10px;
-                animation: fadeIn 2s ease-out;
-              ">
+              <img src="assets/logo.png" alt="HigiBem" class="img-fluid">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
               aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
@@ -48,10 +40,11 @@
     <section class="py-5 bg-pink-light text-white min-vh-100 d-flex justify-content-center align-items-center">
         <div class="container" style="background-color: #cbe1ff; border-radius: 10px; padding: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 40vw;  
-        height: 80%;">
+        width: 90%;
+        max-width: 600px;  
+        height: auto;">
             <h2 class="text-center mb-4" style="text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);"><strong>Entre em contato:</strong></h2>
-            <form action="send_email.php" method="POST" class="w-75 mx-auto">
+            <form action="send_email.php" method="POST" class="w-100 mx-auto">
                 <div class="mb-3">
                     <label for="subject" class="form-label" style="color: black;">Nome</label>
                     <input type="text" class="form-control" id="subject" name="subject" required>

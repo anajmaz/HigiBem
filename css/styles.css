@@ -20,6 +20,46 @@
   text-transform: uppercase;
 }
 
+.img-fluid {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .img-fluid {
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-fluid {  
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .img-fluid { 
+    width: 80px;
+    height: auto;
+  }
+}
+
 .bg-pink-light {
   background-color: #EDA0CF; /* Rosa muito claro */
 }
