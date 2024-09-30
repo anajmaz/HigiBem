@@ -11,6 +11,23 @@
   padding-bottom: 30vw;
 }
 
+.titulo-estilizado {
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, 
+               -1px 1px 0 #000, 1px 1px 0 #000;
+  text-transform: uppercase;
+}
+
+.bg-pink-light {
+  background-color: #EDA0CF; /* Rosa muito claro */
+}
+
+.bg-#cbe1ff {
+  background-color: #004db9;
+}
+
 /* Animação para o título */
 @keyframes fadeInDown {
     from {
@@ -53,10 +70,12 @@
    1px -1px 0 #000,
   -1px 1px 0 #000,
    1px 1px 0 #000; /* Borda preta */
+   text-align: center;
+   text-transform: uppercase;
 }
 
 .hero p {
-  font-size: 1.2rem;  
+  font-size: 2.2rem;  
   text-shadow:
   -1px -1px 0 #000,  
    1px -1px 0 #000,
